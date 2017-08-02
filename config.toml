@@ -1,0 +1,4 @@
+baseURL = "http://tsunami42.github.io/blog"
+languageCode = "en-us"
+title = "My Site For Everything"
+theme = "ananke"
