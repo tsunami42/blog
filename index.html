@@ -29,7 +29,7 @@
 
 
 
-<meta property="og:updated_time" content="2017-08-02T23:07:49&#43;08:00"/>
+<meta property="og:updated_time" content="2017-08-03T22:13:21&#43;08:00"/>
 
 
 
@@ -109,6 +109,25 @@
 
       <section class="w-100 mw8">
         
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <a class="db pv4 ph3 ph0-l no-underline dark-gray dim" href="/blog/posts/guide-to-syscalls/">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">Guide To Syscalls</h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height">
+             笔记  什么是syscalls  用户程序调用kernel services 文件，设备，进程，通信，时间 strace可以看到  syscall如何工作  strace -c 统计syscall Syscall是一个兼容层，用来兼容各种设备 syscall是设置寄存器和变量，kernel执行，取回结果 有许多是不常用的：据说Bash on Windows只实现了一部分  玩一下ptrace  strace通过ptrace来获取syscall的调用信息 自己实现一个strace玩一玩 通过设置ptrace的SysProcAttr，实现自己的strace PTRACE_SYACALL有两次停顿，调用时和结束时，并且tracer是区分不出来的  Syscall与安全  限制程序只执行syscall一部分子集 在微服务的架构下很有实际意义 docker可以通过seccomp文件，限制syscall的子集   相关链接  https://github.com/lizrice/strace-from-scratch  
+        </div>
+        
+      </div>
+    </div>
+  </a>
+</article>
+
+          </div>
         
           <div class="relative w-100 mb4">
             
