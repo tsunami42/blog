@@ -23,13 +23,14 @@ $ dep init
 $ dep ensure
 ```
 
-保证`vendor/`目录下的依赖符合 `Gopkg.toml`与`Gopkg.lock`中的配置，如果没有就创建目录
+保证`vendor/`目录下的依赖符合`Gopkg.toml`与`Gopkg.lock`中的配置，如果没有就创建目录
 
 #   使用时的坑
 
-我的项目有两个依赖：
--   `github.com/influxdata/influxdb@v1.0.0`
--   `github.com/Shopify/sarama@v1.12.0`
+我的项目有两个依赖：  
+
+-   `github.com/influxdata/influxdb@v1.0.0`    
+-   `github.com/Shopify/sarama@v1.12.0`   
 
 原先是通过gdm来直接保存和修改GOPATH中包的版本信息，没有使用vendor的功能，所有的信息都直接从src目录下代码的版本号获得
 
