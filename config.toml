@@ -10,6 +10,7 @@ theme = "minimal"
     accent = "black"
     showBorder = true
     backgroundColor = "white"
+    font = "Noto Sans"
     highlight = true
     highlightStyle = "solarized-dark"
     highlightLanguages = ["go", "shell"]
