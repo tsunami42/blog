@@ -1,11 +1,12 @@
 baseURL = "https://tsunami42.github.io/blog"
 languageCode = "en-us"
-title = "My Site For Everything"
+title = "Don't Painc"
 theme = "minimal"
+canonifyURLs = true
 
 [params]
     author = "苏拉米"
-    description = "随便写一下"
+    description = "Just grab your towel"
     githubUsername = "tsunami42"
     accent = "black"
     showBorder = true

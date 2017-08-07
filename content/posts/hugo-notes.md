@@ -22,13 +22,13 @@ go install github.com/gohugoio/hugo
 
 ### 目录结构初始化
 
-```shell
+```
 hugo new site blog
 ```
 
 ### 设置主题
 
-```shell
+```
 cd blog;
 git init;
 git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke;
@@ -49,7 +49,7 @@ echo 'theme = "ananke"' >> config.toml
 
 ##  第一篇文章
 
-```shell
+```
 # 新建模板文件
 hugo new posts/my-first-post.md
 
