@@ -41,7 +41,7 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 
-     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/shell.min.js"></script> 
+     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/shell.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/toml.min.js"></script> 
 
     <script>hljs.initHighlightingOnLoad();</script>
 
@@ -122,7 +122,7 @@
 
     <h4><a href="https://tsunami42.github.io/blog/posts/hugo-notes/">Hugo Notes</a></h4>
     <h5>August 5, 2017</h5>
-    
+     <kbd class="item-tag">note</kbd> 
 
 </div>
 
@@ -131,7 +131,7 @@
 
 <h1 id="安装-初始化">安装 &amp; 初始化</h1>
 
-<p><a href="https://gohugo.io/getting-started/installing">https://gohugo.io/getting-started/installing</a></p>
+<p><a href="https://gohugo.io/getting-started/installing" target="_blank">https://gohugo.io/getting-started/installing</a></p>
 
 <h2 id="安装">安装</h2>
 
@@ -163,7 +163,7 @@ echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml
 
 <h1 id="部署到github">部署到github</h1>
 
-<p><a href="https://help.github.com/articles/user-organization-and-project-pages/">github page介绍</a></p>
+<p><a href="https://help.github.com/articles/user-organization-and-project-pages/" target="_blank">github page介绍</a></p>
 
 <h2 id="新建项目">新建项目</h2>
 
@@ -197,13 +197,14 @@ hugo server -D
 
 <p>github pages的部署方式有好几种，我选择将生成的静态文件放到 <code>gh-pages</code> 目录中</p>
 
-<p><a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/#deployment-from-your-gh-pages-branch">查看文档</a></p>
+<p><a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/#deployment-from-your-gh-pages-branch" target="_blank">查看文档</a></p>
 
 <h3 id="注意事项">注意事项</h3>
 
 <ul>
-<li>因为github是全站https开启的， <code>baseURL</code> 一定要是 <code>https</code> 开头，不然会有资源加载的问题</li>
-<li>运行 <code>hugo</code> 命令会生成静态文件，默认生成的静态文件会放到 <code>public</code> 目录下</li>
+<li>因为github是全站https开启的， <code>baseURL</code> 一定要是 <code>https</code> 开头，不然会有资源加载的问题<br /></li>
+<li>运行 <code>hugo</code> 命令会生成静态文件，默认生成的静态文件会放到 <code>public</code> 目录下<br />
+<br /></li>
 </ul>
 
 <h2 id="自动刷新的坑">自动刷新的坑</h2>
@@ -216,7 +217,7 @@ hugo server -D
 timezone: Asia/Shanghai
 </code></pre>
 
-<p>相关链接：<a href="https://stackoverflow.com/questions/20422279/github-pages-are-not-updating">https://stackoverflow.com/questions/20422279/github-pages-are-not-updating</a></p>
+<p>相关链接：<a href="https://stackoverflow.com/questions/20422279/github-pages-are-not-updating" target="_blank">https://stackoverflow.com/questions/20422279/github-pages-are-not-updating</a></p>
 </div>
 
     
@@ -230,7 +231,7 @@ timezone: Asia/Shanghai
 
         <footer>
 
-            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
+            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a>.</p>
 
         </footer>
 

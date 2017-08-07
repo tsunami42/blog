@@ -1,30 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Don&#39;t Painc</title>
-    <link>https://tsunami42.github.io/blog/posts/</link>
-    <description>Recent content in Posts on Don&#39;t Painc</description>
+    <title>Go on Don&#39;t Painc</title>
+    <link>https://tsunami42.github.io/blog/tags/go/</link>
+    <description>Recent content in Go on Don&#39;t Painc</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Aug 2017 23:35:01 +0800</lastBuildDate>
     
-	<atom:link href="https://tsunami42.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://tsunami42.github.io/blog/tags/go/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Hugo Notes</title>
-      <link>https://tsunami42.github.io/blog/posts/hugo-notes/</link>
-      <pubDate>Sat, 05 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://tsunami42.github.io/blog/posts/hugo-notes/</guid>
-      <description>安装 &amp;amp; 初始化 https://gohugo.io/getting-started/installing
-安装 Gopher当然是直接从源码安装了
-go get github.com/kardianos/govendor govendor get github.com/gohugoio/hugo go install github.com/gohugoio/hugo  初始化 目录结构初始化 hugo new site blog  设置主题 cd blog; git init; git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke; # 编辑config.toml配置文件，增加主题配置 echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml  文档上的默认主题是这个，考虑换一个
-部署到github github page介绍
-新建项目 在github上新建项目，页面访问链接： username.github.io/projectname
-第一篇文章 # 新建模板文件 hugo new posts/my-first-post.md # 随便写点啥 # 本地浏览器预览 hugo server -D  到目前为止，页面已经可以预览，接下来是发布工作
-部署实践 准备工作 首先修改 config.toml 中的 baseURL 字段为</description>
-    </item>
     
     <item>
       <title>Dep使用记录</title>
@@ -71,15 +56,6 @@ $ dep help init ... By default, the dependencies are resolved over the network. 
  docker可以通过seccomp文件，限制syscall的子集
    相关链接  https://github.com/lizrice/strace-from-scratch
   </description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://tsunami42.github.io/blog/posts/my-first-post/</link>
-      <pubDate>Wed, 02 Aug 2017 23:07:49 +0800</pubDate>
-      
-      <guid>https://tsunami42.github.io/blog/posts/my-first-post/</guid>
-      <description>哈哈哈</description>
     </item>
     
   </channel>

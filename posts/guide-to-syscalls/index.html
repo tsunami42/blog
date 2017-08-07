@@ -41,7 +41,7 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 
-     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/shell.min.js"></script> 
+     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/shell.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/toml.min.js"></script> 
 
     <script>hljs.initHighlightingOnLoad();</script>
 
@@ -122,7 +122,7 @@
 
     <h4><a href="https://tsunami42.github.io/blog/posts/guide-to-syscalls/">Guide To Syscalls</a></h4>
     <h5>August 3, 2017</h5>
-    
+     <kbd class="item-tag">talk</kbd>  <kbd class="item-tag">Go</kbd> 
 
 </div>
 
@@ -138,42 +138,43 @@
 <h1 id="笔记">笔记</h1>
 
 <ul>
-<li>什么是syscalls
+<li>什么是syscalls<br />
 
 <ul>
-<li>用户程序调用kernel services</li>
-<li>文件，设备，进程，通信，时间</li>
-<li>strace可以看到</li>
+<li>用户程序调用kernel services<br /></li>
+<li>文件，设备，进程，通信，时间<br /></li>
+<li>strace可以看到<br /></li>
 </ul></li>
-<li>syscall如何工作
+<li>syscall如何工作<br />
 
 <ul>
-<li>strace -c 统计syscall</li>
-<li>Syscall是一个兼容层，用来兼容各种设备</li>
-<li>syscall是设置寄存器和变量，kernel执行，取回结果</li>
-<li>有许多是不常用的：据说Bash on Windows只实现了一部分</li>
+<li>strace -c 统计syscall<br /></li>
+<li>Syscall是一个兼容层，用来兼容各种设备<br /></li>
+<li>syscall是设置寄存器和变量，kernel执行，取回结果<br /></li>
+<li>有许多是不常用的：据说Bash on Windows只实现了一部分<br /></li>
 </ul></li>
-<li>玩一下ptrace
+<li>玩一下ptrace<br />
 
 <ul>
-<li>strace通过ptrace来获取syscall的调用信息</li>
-<li>自己实现一个strace玩一玩</li>
-<li>通过设置ptrace的SysProcAttr，实现自己的strace</li>
-<li>PTRACE_SYACALL有两次停顿，调用时和结束时，并且tracer是区分不出来的</li>
+<li>strace通过ptrace来获取syscall的调用信息<br /></li>
+<li>自己实现一个strace玩一玩<br /></li>
+<li>通过设置ptrace的SysProcAttr，实现自己的strace<br /></li>
+<li>PTRACE_SYACALL有两次停顿，调用时和结束时，并且tracer是区分不出来的<br /></li>
 </ul></li>
-<li>Syscall与安全
+<li>Syscall与安全<br />
 
 <ul>
-<li>限制程序只执行syscall一部分子集</li>
-<li>在微服务的架构下很有实际意义</li>
-<li>docker可以通过seccomp文件，限制syscall的子集</li>
+<li>限制程序只执行syscall一部分子集<br /></li>
+<li>在微服务的架构下很有实际意义<br /></li>
+<li>docker可以通过seccomp文件，限制syscall的子集<br />
+<br /></li>
 </ul></li>
 </ul>
 
 <h1 id="相关链接">相关链接</h1>
 
 <ul>
-<li><a href="https://github.com/lizrice/strace-from-scratch">https://github.com/lizrice/strace-from-scratch</a></li>
+<li><a href="https://github.com/lizrice/strace-from-scratch" target="_blank">https://github.com/lizrice/strace-from-scratch</a><br /></li>
 </ul>
 </div>
 
@@ -188,7 +189,7 @@
 
         <footer>
 
-            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
+            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a>.</p>
 
         </footer>
 

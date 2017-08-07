@@ -6,9 +6,46 @@
     <description>Recent content in Tags on Don&#39;t Painc</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Fri, 04 Aug 2017 23:35:01 +0800</lastBuildDate>
     
 	<atom:link href="https://tsunami42.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Dep</title>
+      <link>https://tsunami42.github.io/blog/tags/dep/</link>
+      <pubDate>Fri, 04 Aug 2017 23:35:01 +0800</pubDate>
+      
+      <guid>https://tsunami42.github.io/blog/tags/dep/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>https://tsunami42.github.io/blog/tags/go/</link>
+      <pubDate>Fri, 04 Aug 2017 23:35:01 +0800</pubDate>
+      
+      <guid>https://tsunami42.github.io/blog/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Note</title>
+      <link>https://tsunami42.github.io/blog/tags/note/</link>
+      <pubDate>Sat, 05 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://tsunami42.github.io/blog/tags/note/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Talk</title>
+      <link>https://tsunami42.github.io/blog/tags/talk/</link>
+      <pubDate>Thu, 03 Aug 2017 22:13:21 +0800</pubDate>
+      
+      <guid>https://tsunami42.github.io/blog/tags/talk/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

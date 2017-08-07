@@ -3,7 +3,7 @@
 
     <head>
 
-        <title>Dep使用记录</title>
+        <title>Dep</title>
 
         <style>
 
@@ -71,7 +71,7 @@
 
                 <div class="navbar-header">
 
-                    <a class="navbar-brand visible-xs" href="#">Dep使用记录</a>
+                    <a class="navbar-brand visible-xs" href="#">Dep</a>
 
                     <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
                         <span class="icon-bar"></span>
@@ -112,7 +112,9 @@
 
 <main>
 
-    <div class="item">
+    <h2>Dep</h2>
+
+     <div class="item">
 
     
     
@@ -125,68 +127,7 @@
      <kbd class="item-tag">Go</kbd>  <kbd class="item-tag">dep</kbd> 
 
 </div>
-
-
-    <br> <div class="text-justify">
-
-<h1 id="dep介绍">dep介绍</h1>
-
-<p>今年GopherCon刚好有两个关于dep的talk</p>
-
-<ul>
-<li><a href="https://www.youtube.com/watch?v=5LtMb090AZI&amp;list=PL2ntRZ1ySWBdD9bru6IR-_WXUgJqvrtx9&amp;index=18" target="_blank">The New Era of Go Package Management</a><br /></li>
-<li><a href="https://www.youtube.com/watch?v=eZwR8qr2BfI&amp;list=PL2ntRZ1ySWBfhRZj3BDOrKdHzoafHsKHU&amp;index=16" target="_blank">go dep in 10 minutes</a><br />
-<br /></li>
-</ul>
-
-<h1 id="使用方法">使用方法</h1>
-
-<pre><code class="language-shell">$ dep init
-</code></pre>
-
-<p>初始化项目，会先从已有的包管理读取配置依赖信息（<code>glide</code> &amp; <code>godep</code>），备份当前的<code>vendor/</code>然后生成相应的文件 <a href="https://github.com/golang/dep/blob/master/docs/Gopkg.toml.md" target="_blank"><code>Gopkg.toml</code></a> 与<code>Gopkg.lock</code>，最后将依赖安装到<code>vendor/</code>目录下</p>
-
-<pre><code class="language-shell">$ dep ensure
-</code></pre>
-
-<p>保证<code>vendor/</code>目录下的依赖符合<code>Gopkg.toml</code>与<code>Gopkg.lock</code>中的配置，如果没有就创建目录</p>
-
-<h1 id="使用时的坑">使用时的坑</h1>
-
-<p>我的项目有两个依赖：</p>
-
-<ul>
-<li><code>github.com/influxdata/influxdb@v1.0.0</code><br /></li>
-<li><code>github.com/Shopify/sarama@v1.12.0</code><br />
-<br /></li>
-</ul>
-
-<p>原先是通过gdm来直接保存和修改GOPATH中包的版本信息，没有使用vendor的功能，所有的信息都直接从src目录下代码的版本号获得</p>
-
-<p>在执行<code>dep init</code>后， <code>Gopkg.toml</code>里influxdb的依赖一直不对，一直是当前最大的tag，v1.3.1，多次尝试后，通过<code>dep help init</code>找到了答案</p>
-
-<pre><code>$ dep help init
-...
-By default, the dependencies are resolved over the network. A version will be
-selected from the versions available from the upstream source per the following
-algorithm:
- - Tags conforming to semver (sorted by semver rules)
- - Default branch(es) (sorted lexicographically)
- - Non-semver tags (sorted lexicographically)
-An alternate mode can be activated by passing -gopath. In this mode, the version
-of each dependency will reflect the current state of the GOPATH. If a dependency
-doesn't exist in the GOPATH, a version will be selected based on the above
-network version selection algorithm.
-...
-</code></pre>
-
-<p>默认情况下，<code>dep init</code>是直接从网上获取版本信息，只有指定了<code>-gopath</code>，才是从当前的GOPATH中获取。</p>
-</div>
-
-    
-    
-
-    
+ 
 
 </main>
 
