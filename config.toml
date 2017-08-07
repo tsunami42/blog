@@ -14,7 +14,11 @@ canonifyURLs = true
     font = "Noto Sans"
     highlight = true
     highlightStyle = "solarized-dark"
-    highlightLanguages = ["go", "shell"]
+    highlightLanguages = ["go", "shell", "toml"]
+
+[blackfriday]
+    hrefTargetBlank = true
+    extensions = ["hardLineBreak"]
 
 [[menu.main]]
     url = "/"
