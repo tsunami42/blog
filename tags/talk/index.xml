@@ -6,10 +6,22 @@
     <description>Recent content in Talk on Don&#39;t Painc</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Aug 2017 22:13:21 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 07 Aug 2017 22:17:26 +0800</lastBuildDate>
     
 	<atom:link href="https://tsunami42.github.io/blog/tags/talk/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Go Dep In 10min</title>
+      <link>https://tsunami42.github.io/blog/posts/go-dep-in-10min/</link>
+      <pubDate>Mon, 07 Aug 2017 22:17:26 +0800</pubDate>
+      
+      <guid>https://tsunami42.github.io/blog/posts/go-dep-in-10min/</guid>
+      <description>Manifest - Gopkg.toml 用户自行维护
+[[constraint]] name = &amp;quot;github.com/sdboyer/deptest&amp;quot; source = &amp;quot;http://github.com/carolynvs/deptest&amp;quot; version = &amp;quot;0.8.0&amp;quot; [[constraint]] branch = &amp;quot;master&amp;quot; name = &amp;quot;github.com/pkg/errors&amp;quot;  根据semver指定版本
+Lock - Gopkg.lock [[projects]] name = &amp;quot;github.com/sdboyer/deptest&amp;quot; revision = &amp;quot;ff2948a2ac8f538c4ecd55962e919d1e13e74baf&amp;quot; version = &amp;quot;v0.8.1&amp;quot; [[projects]] name = &amp;quot;github.com/pkg/errors&amp;quot; revision = &amp;quot;17b591df37844cde689f4d5813e5cea0927d8dd2&amp;quot; version = &amp;quot;v0.7.1&amp;quot;  0.8.0 和 v0.8.1 ？ dep希望大家有使用semver的规范来管理release，默认指代一个版本范围
+1.2.3 becomes &amp;gt;=1.2.3, &amp;lt;2.0.0 0.2.3 becomes &amp;gt;=0.2.3, &amp;lt;0.3.0 0.0.3 becomes &amp;gt;=0.0.3, &amp;lt;0.1.0 Use =0.8.1 to pin to a version  一些命令 dep init  使用其他的包管理：会想办法自动迁移</description>
+    </item>
     
     <item>
       <title>Guide To Syscalls</title>
