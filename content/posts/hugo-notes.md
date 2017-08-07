@@ -1,6 +1,7 @@
 ---
 title: "Hugo Notes"
-date: 2017-08-05T14:02:05+08:00
+date: 2017-08-05
+tags: ["note"]
 draft: false
 ---
 

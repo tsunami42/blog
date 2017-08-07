@@ -1,6 +1,7 @@
 ---
 title: "Guide To Syscalls"
 date: 2017-08-03T22:13:21+08:00
+tags: ["talk", "Go"]
 draft: false
 ---
 

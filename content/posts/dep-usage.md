@@ -1,6 +1,7 @@
 ---
 title: "Dep使用记录"
 date: 2017-08-04T23:35:01+08:00
+tags: ["Go", "dep"]
 draft: false
 ---
 
