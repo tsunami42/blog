@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://tsunami42.github.io/blog/posts/hugo-notes-2/</loc>
+    <lastmod>2017-08-13T17:33:14+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://tsunami42.github.io/blog/posts/go-dep-in-10min/</loc>
     <lastmod>2017-08-07T22:17:26+08:00</lastmod>
   </url>
@@ -40,7 +45,7 @@
   
   <url>
     <loc>https://tsunami42.github.io/blog/</loc>
-    <lastmod>2017-08-07T22:17:26+08:00</lastmod>
+    <lastmod>2017-08-13T17:33:14+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -52,13 +57,13 @@
   
   <url>
     <loc>https://tsunami42.github.io/blog/tags/note/</loc>
-    <lastmod>2017-08-05T00:00:00+00:00</lastmod>
+    <lastmod>2017-08-13T17:33:14+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://tsunami42.github.io/blog/posts/</loc>
-    <lastmod>2017-08-07T22:17:26+08:00</lastmod>
+    <lastmod>2017-08-13T17:33:14+08:00</lastmod>
     <priority>0</priority>
   </url>
   
