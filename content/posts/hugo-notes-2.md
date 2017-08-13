@@ -1,8 +1,7 @@
 ---
 title: "Hugo Notes 2"
-date: 2017-08-07
+date: 2017-08-13T17:33:14+08:00
 tags: ["note"]
-draft: true
 ---
 
 ###   静态资源加载失败
@@ -23,6 +22,8 @@ https://gohugo.io/tools/syntax-highlighting/
 
 默认状态下，hugo不带高亮。如果服务端渲染，可以通过`Pygments`来实现。   
 其余就是前端方案，我图省事，直接找到一个自带高亮的主题
+
+支持的语言列表：http://highlightjs.readthedocs.io/en/latest/css-classes-reference.html#language-names-and-aliases
 
 ### Markdown配置
 
