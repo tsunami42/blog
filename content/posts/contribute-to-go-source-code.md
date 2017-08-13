@@ -23,3 +23,36 @@ go get golang.org/x/tools/cmd/godoc
 godoc -goroot=$HOME/go -http=:6060 -ex
 
 https://go-review.googlesource.com/54670
+
+关于commit message
+
+https://go-review.googlesource.com/c/49090
+
+https://go.googlesource.com/go/+/cc1f58046f79698c243b4735c06e4e08263f5dc5
+
+原来的message
+```
+fmt: Example showing implementation of Stringer
+
+There was no existing examples showing a custom implementation of the
+Stringer interface.
+
+Change-Id: I901f995f8aedee47c48252745816e53192d4b7e4
+```
+
+修改意见：https://go-review.googlesource.com/c/49090/1//COMMIT_MSG#7
+```
+The first line of the commit message should explain what will occur when this change is merged. eg:
+
+fmt: add Stringer example
+```
+
+要加上完整的包名才行
+
+https://go-review.googlesource.com/c/53357/1//COMMIT_MSG#7
+
+这样在gerrit的页面上显示的时候，在会有完整的信息
+
+没有给ReverseBytes加注释，因为根据之前的一个CL，这个函数内部是判断的UintSize，32位与64位不同的情况下，会调用ReverseBytes32 或者 ReverseBytes64
+
+参考：https://go-review.googlesource.com/c/53636#message-de303312fb14a3f82d8309dd5d87b23711d1eb8f
