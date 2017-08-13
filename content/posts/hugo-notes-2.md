@@ -2,6 +2,7 @@
 title: "Hugo Notes 2"
 date: 2017-08-13T17:33:14+08:00
 tags: ["note"]
+isCJKLanguage: true
 ---
 
 ###   静态资源加载失败

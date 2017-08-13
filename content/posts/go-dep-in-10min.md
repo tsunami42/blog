@@ -2,6 +2,7 @@
 title: "Go Dep In 10min"
 date: 2017-08-07T22:17:26+08:00
 tags: ["talk", "Go"]
+isCJKLanguage: true
 ---
 
 {{< youtube eZwR8qr2BfI >}}

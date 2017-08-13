@@ -2,7 +2,7 @@
 title: "Hugo Notes"
 date: 2017-08-05
 tags: ["note"]
-draft: false
+isCJKLanguage: true
 ---
 
 #   安装 & 初始化
