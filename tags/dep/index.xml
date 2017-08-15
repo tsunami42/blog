@@ -17,17 +17,7 @@
       <pubDate>Fri, 04 Aug 2017 23:35:01 +0800</pubDate>
       
       <guid>https://tsunami42.github.io/blog/posts/dep-usage/</guid>
-      <description>dep介绍 今年GopherCon刚好有两个关于dep的talk
- The New Era of Go Package Management
- go dep in 10 minutes
-  使用方法 $ dep init  初始化项目，会先从已有的包管理读取配置依赖信息（glide &amp;amp; godep），备份当前的vendor/然后生成相应的文件 Gopkg.toml 与Gopkg.lock，最后将依赖安装到vendor/目录下
-$ dep ensure  保证vendor/目录下的依赖符合Gopkg.toml与Gopkg.lock中的配置，如果没有就创建目录
-使用时的坑 我的项目有两个依赖：
- github.com/influxdata/influxdb@v1.0.0
- github.com/Shopify/sarama@v1.12.0
-  原先是通过gdm来直接保存和修改GOPATH中包的版本信息，没有使用vendor的功能，所有的信息都直接从src目录下代码的版本号获得
-在执行dep init后， Gopkg.toml里influxdb的依赖一直不对，一直是当前最大的tag，v1.3.1，多次尝试后，通过dep help init找到了答案
-$ dep help init ... By default, the dependencies are resolved over the network. A version will be selected from the versions available from the upstream source per the following algorithm: - Tags conforming to semver (sorted by semver rules) - Default branch(es) (sorted lexicographically) - Non-semver tags (sorted lexicographically) An alternate mode can be activated by passing -gopath.</description>
+      <description>dep介绍 今年GopherCon刚好有两个关于dep的talk The New Era of Go Package Management go dep in 10 minutes 使用方法 $ dep init 初始化项目，会先从已有的包管理读取配置依</description>
     </item>
     
   </channel>
