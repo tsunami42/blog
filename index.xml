@@ -6,10 +6,19 @@
     <description>Recent content on Don&#39;t Painc</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 16 Aug 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://tsunami42.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bash Proxy Setting Function</title>
+      <link>https://tsunami42.github.io/blog/posts/bash-proxy-setting-function/</link>
+      <pubDate>Wed, 16 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://tsunami42.github.io/blog/posts/bash-proxy-setting-function/</guid>
+      <description>由于公司自带的代理失效，而telegraf的项目管理又用的是Godep，并没有vendor。导致telegraf本地编译失败，索性花了10分</description>
+    </item>
     
     <item>
       <title>High Performance Key_Value Store</title>
