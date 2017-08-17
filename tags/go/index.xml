@@ -6,10 +6,19 @@
     <description>Recent content in Go on Don&#39;t Painc</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 17 Aug 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://tsunami42.github.io/blog/tags/go/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Go Build Modes</title>
+      <link>https://tsunami42.github.io/blog/posts/go-build-modes/</link>
+      <pubDate>Thu, 17 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://tsunami42.github.io/blog/posts/go-build-modes/</guid>
+      <description>总共8中build类型，是-buildmode的选项 exe (static) self-contained，包含所有的调用，没有外部依赖，是大多是情况下go语言编</description>
+    </item>
     
     <item>
       <title>High Performance Key_Value Store</title>
