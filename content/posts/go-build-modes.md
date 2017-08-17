@@ -1,6 +1,6 @@
 ---
 title: "Go Build Modes"
-date: 2017-08-16
+date: 2017-08-17
 tags: ["Go", "talk"]
 isCJKLanguage: true
 ---
