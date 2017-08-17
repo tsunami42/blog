@@ -8,39 +8,35 @@ isCJKLanguage: true
 
 {{< youtube x-LhC-J2Vbk >}}
 
-总共8中build类型
+总共8中build类型，是-buildmode的选项
 
 ### exe(static)
 
-self contiains
+self-contained，包含所有的调用，没有外部依赖，是大多是情况下go语言编译的输出
 
 ### exe(with libc)
 
-libc， DNS，user查找
-
-在有网络的时候，会自动加上
-
-用户空间
+会依赖系统的libc，在涉及网络如DNS查找，或者用户态的系统调用，如操作系统用户查找的时候，会自动加上。
 
 ### exe(with more)
 
-调用其他的语言
+go语言调用其他的语言的场景，符合ELF ABI
 
 ### pie
 
+PIE: Position-independent executables
+
 -build_mode=pie
 
-一般是调到指定的地址，这样更容易被攻击
+在生成字节码的时候，一般是让成名jump到指定的地址，这样恶意代码可以让你在jump之后执行它自己的代码。
 
-而PIE是相对地址
+而PIE是相对地址，所以让恶意程序更难去注入自己的代码
 
-安卓是默认的
-
-
+在安卓是默认的，需要操作系统层面的支持，是未来的趋势
 
 ### c-archive
 
-生成.a文件，C可以用
+生成.a文件，C可以静态链接
 
 ```go
 package main
@@ -78,11 +74,20 @@ iOS程序调用go是通过这种方式实现的
 
 ### c-shared
 
-生成.so文件
+生成.so(shared object)
 
-加入.so查找目录
+可以通过`LD_LIBRARY_PATH`加入.so查找目录
 
-android  
+```shell
+$ go build -buildmode=c-shared hello.go
+
+$ cc hello.a hello.so
+
+$ LD_LIBRARY_PATH=. ./a.out
+Hello, World!
+```
+
+Android调用go是这样实现的
 
 ### shared
 
